@@ -64,7 +64,7 @@ li.header-logo{
 
 
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./img/welcome.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -98,12 +98,14 @@ li.header-logo{
     font-size:2.6em;
     margin-bottom:30px;
     font-weight:900px;
+    text-shadow: 2px 2px 8px black;
     text-align: center;
 }
 
 
 .paragraph{
     margin-bottom:30px;
+    text-shadow: 2px 2px 8px black;
     text-align: center;
 }
 
