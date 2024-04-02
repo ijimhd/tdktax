@@ -18,7 +18,8 @@ body{
 
 
 .container,
-.title-container{
+.title-container,
+.apps-container{
     max-width: 1200px;
     width: 100%;
     padding-right: 15px;
@@ -86,6 +87,37 @@ li.header-logo{
 }
 
 
+.apps-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap:60px;
+    padding-block:70px;
+}
+
+
+.app-desc{
+    font-size:20px;
+    padding-block:20px;
+}
+
+
+.app-box{
+    text-align: center;
+    background-color: #202121;
+    padding-block:50px;
+    padding-inline:40px;
+    border-radius: 7px;
+    max-width:350px;
+}
+
+.app-link{
+    font-size: 17px;
+    color:#ff8c00;
+}
+
+
 .footer-content{
     display:flex;
     padding-block:10px;
@@ -119,3 +151,44 @@ li.footer-link-title{
     font-size:1.1em;
     font-weight:500;
 }
+
+
+@media screen and (max-width: 900px){
+    
+    body{
+        font-size:19px;
+    }
+
+
+    ul.navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    li.header-logo{
+
+        margin:0;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        
+    }
+
+    
+    .footer-logo{
+        font-size:35px;
+        margin-bottom:20px;
+    }
+
+    
+    .footer-links{
+        margin-bottom:20px;
+    }
+
+    
+    li.footer-link-title{
+        margin-bottom:10px;
+        font-size: 25px;
+    }
