@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: "Geologica", sans-serif;
+}
+
+
+body{
+    background-color: #0a0806;
+    color:#f2e9de;
+    font-size:23px;
+}
+
+
+.container,
+.title-container{
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ul.navbar{
+    display:flex;
+    padding:20px;
+}
+
+
+ul{
+    list-style-type: none;
+    align-items: center;
+    gap:20px;
+}
+
+
+a{
+    text-decoration: none;
+    color:#f2e9de;
+}
+
+
+li.header-logo{
+    font-size:1.7em;
+    margin-right:auto;
+    padding:10px;
+}
+
+
+.reservation{
+    background-color:#ff8c00;
+    font-weight:500;
+    padding:13px;
+    border-radius: 7px;
+    
+}
+
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    max-width:1200px;
+
+}
+
+
+.title-text{
+    font-size:2em;
+    font-weight:600;
+}
+
+
+.footer-content{
+    display:flex;
+    padding-block:10px;
+}
+
+
+.footer{
+    background-color: #130f0b;
+}
+
+
+.footer-content{
+    justify-content: space-between;
+    padding-block:70px;
+}
+
+
+li.footer-link{
+    font-size:0.8em;
+    padding-block:5px;
+}
+
+
+.footer-logo{
+    font-size:1.7em
+}
+
+
+li.footer-link-title{
+    margin-bottom:30px;
+    font-size:1.1em;
+    font-weight:500;
+}
