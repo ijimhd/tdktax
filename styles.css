@@ -7,8 +7,6 @@
     padding:0;
     margin:0;
     font-family: "Geologica", sans-serif;
-    
-
 }
 
 
@@ -20,7 +18,9 @@ body{
 
 
 .container,
-.hero-container{
+.hero-container,
+.title-container,
+.apps-container{
     max-width: 1200px;
     width: 100%;
     padding-right: 15px;
@@ -178,6 +178,61 @@ li.footer-link-title{
     margin-bottom:30px;
     font-size:1.1em;
     font-weight:500;
+}
+
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    max-width:1200px;
+
+}
+
+
+.title-text{
+    font-size:1.7em;
+    font-weight:600;
+    text-shadow: 2px 2px 8px black;
+}
+
+
+.apps-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap:60px;
+    padding-block:70px;
+}
+
+
+.app-desc{
+    font-size:20px;
+    padding-block:20px;
+}
+
+
+.app-box{
+    text-align: center;
+    background-color: #202121;
+    padding-block:50px;
+    padding-inline:40px;
+    border-radius: 7px;
+    max-width:350px;
+}
+
+.app-link{
+    font-size: 17px;
+    color:#ff8c00;
 }
 
 
