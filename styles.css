@@ -112,8 +112,10 @@ li.header-logo{
 
 .reservation{
     background-color:#ff8c00;
+    color:black;
     font-weight:500;
-    padding:13px;
+    padding-block:17px;
+    padding-inline:30px;
     border-radius: 7px;
     
 }
