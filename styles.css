@@ -236,7 +236,9 @@ li.footer-link-title{
 
 .contact-content{
     display:flex;
+    justify-content: space-between;
     padding-block:70px;
+    gap:70px;
 }
 
 
@@ -250,11 +252,7 @@ li.footer-link-title{
 .phone-numbers,
 .email,
 .address{
-    background-color: #202121;
-    max-width:350px;
-    padding-block:25px;
-    padding-inline:35px;
-    border-radius: 7px;
+
 }
 
 
@@ -266,8 +264,78 @@ li.footer-link-title{
 
 
 .info{
-    font-size:20px;
+    font-size:0.9em;
     font-weight:200;
+}
+
+
+.submit-button{
+    background-color: #ff8c00;
+    font-size:23px;
+    padding-block:10px;
+    padding-inline: 10px;
+    border-style: none;
+    border-radius:7px;
+}
+
+.contact-form-content,
+.fname-content,
+.email-content,
+.message-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.full-name{
+    display:flex;
+    flex:1;
+    gap:40px;
+    
+}
+
+.input-field{
+    border-radius: 7px;
+    border-style:none;
+    background-color: #f2e9de;
+    width:100%;
+    padding-inline:30px;
+    height:40px;
+    font-size:18px;
+}
+
+.message-box{
+    height:100px;
+    padding-block:10px;
+    margin-bottom:30px;
+}
+
+.contact-form-content{
+    background-color: #202121;
+    padding:30px;
+    border-radius: 7px;
+    gap:20px;
+    height:100%;
+}
+
+
+.form-item-title{
+    margin-bottom:10px;
+}
+
+
+.info-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    background-color: #202121;
+    padding-block:25px;
+    padding-inline:60px;
+    border-radius: 7px;
+}
+
+form{
+    height:100%;
 }
 
 
@@ -333,6 +401,31 @@ li.footer-link-title{
     li.footer-link-title{
         margin-bottom:10px;
         font-size: 25px;
+    }
+
+    .contact-container{
+        max-width:600px;
+    }
+    .contact-content{
+        flex-wrap: wrap-reverse;
+        margin-inline:20px;
+        justify-content: center;
+    }
+
+    .contact-form{
+        width:100%;
+    }
+
+
+    .full-name{
+        flex-direction: column;
+        gap:20px;
+    }
+
+
+    .contact-information{
+        text-align: center;
+        width:100%;
     }
 
 }
