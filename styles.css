@@ -20,7 +20,8 @@ body{
 .container,
 .hero-container,
 .title-container,
-.apps-container{
+.apps-container,
+.contact-container{
     max-width: 1200px;
     width: 100%;
     padding-right: 15px;
@@ -146,8 +147,7 @@ button{
 .para{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    padding-inline:20px; 
+    justify-content: center; 
 }
 
 
@@ -159,7 +159,6 @@ button{
 .footer-content{
     justify-content: space-between;
     padding-block:70px;
-    padding-inline:20px;
 }
 
 
@@ -235,6 +234,43 @@ li.footer-link-title{
 }
 
 
+.contact-content{
+    display:flex;
+    padding-block:70px;
+}
+
+
+.contact-information{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.phone-numbers,
+.email,
+.address{
+    background-color: #202121;
+    max-width:350px;
+    padding-block:25px;
+    padding-inline:35px;
+    border-radius: 7px;
+}
+
+
+.phone-numbers-title,
+.email-title,
+.address-title{
+    padding-bottom:10px;
+}
+
+
+.info{
+    font-size:20px;
+    font-weight:200;
+}
+
+
 @media screen and (max-width: 900px){
     
     body{
@@ -272,9 +308,14 @@ li.footer-link-title{
     }
 
 
+    .para{
+        padding-inline:20px;
+    }
+
+
     .footer-content{
         flex-direction: column;
-        
+        padding-inline:20px;
     }
 
     
