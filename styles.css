@@ -104,20 +104,22 @@ li.header-logo{
 
 
 .paragraph{
-    margin-bottom:30px;
+    margin-bottom:20px;
     text-shadow: 2px 2px 8px black;
     text-align: center;
 }
 
 
-.reservation{
+button{
     background-color:#ff8c00;
     color:black;
     font-weight:500;
     padding-block:17px;
     padding-inline:30px;
     border-radius: 7px;
-    
+    border-style: none;
+    font-size:1em;
+    cursor:pointer;
 }
 
 
