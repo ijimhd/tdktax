@@ -278,6 +278,7 @@ li.footer-link-title{
     border-radius:7px;
 }
 
+
 .contact-form-content,
 .fname-content,
 .email-content,
@@ -286,12 +287,14 @@ li.footer-link-title{
     flex-direction: column;
 }
 
+
 .full-name{
     display:flex;
     flex:1;
     gap:40px;
     
 }
+
 
 .input-field{
     border-radius: 7px;
@@ -303,11 +306,13 @@ li.footer-link-title{
     font-size:18px;
 }
 
+
 .message-box{
     height:100px;
     padding-block:10px;
     margin-bottom:30px;
 }
+
 
 .contact-form-content{
     background-color: #202121;
@@ -333,6 +338,7 @@ li.footer-link-title{
     padding-inline:60px;
     border-radius: 7px;
 }
+
 
 form{
     height:100%;
@@ -403,14 +409,18 @@ form{
         font-size: 25px;
     }
 
+    
     .contact-container{
         max-width:600px;
     }
+    
+    
     .contact-content{
         flex-wrap: wrap-reverse;
         margin-inline:20px;
         justify-content: center;
     }
+
 
     .contact-form{
         width:100%;
