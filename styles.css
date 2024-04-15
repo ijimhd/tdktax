@@ -81,7 +81,7 @@ a:hover{
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100%;
 }
 
 .hero-container{
@@ -327,6 +327,13 @@ iframe{
 
 .map-content{
     padding-bottom:70px;
+}
+
+@media screen and (max-width: 1400px){
+
+    .hero{
+        background-size:cover;
+    }
 }
 
 @media screen and (max-width: 900px){
