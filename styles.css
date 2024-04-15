@@ -482,6 +482,10 @@ iframe{
 
     .map-content{
         margin-inline:20px;
-    }    
+    }  
+    
+    .title{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/background-mobile.webp");
+    }
 
 }
