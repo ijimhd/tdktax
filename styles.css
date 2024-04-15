@@ -423,6 +423,12 @@ iframe{
         height:500px;
     }
 
+    .hero-title{
+        background-color: transparent;
+        margin-bottom:20px;
+        margin-top:0;
+    }
+
     .para{
         padding-inline:20px;
     }
