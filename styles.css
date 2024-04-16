@@ -193,13 +193,14 @@ button{
     justify-content: space-between;
     padding-block: 3em;
     height: 100%;
+    gap: 3em;
 }
 
 .info-box{
     display: flex;
     flex-direction: column;
     background-color: #202121;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 7px;
 }
 
@@ -216,6 +217,7 @@ button{
 
 .full-name{
     display: flex;
+    flex: 1;
     gap: 2em;
 }
 
@@ -228,12 +230,17 @@ button{
 .input-field{
     font-size: 0.9em;
     padding: 0.5em;
+    margin-top: 0.9em;
     border-radius: 7px;
     width: 100%;
 }
 
 .message-content{
     padding-block: 1.1em;
+}
+
+.message-box{
+    height: 10em;
 }
 
 iframe{
