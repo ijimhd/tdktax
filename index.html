@@ -6,12 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TdkTax</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="preload" fetchpriority="high" as="image" href="/img/welcome.webp" type="image/webp">
-        <link rel="preload" fetchpriority="high" as="image" href="/img/tax.webp" type="image/webp">
     </head>
     <body>
         <nav>
-            <a class="header-logo" href="index.html">Th@DiK@</a> 
+            <a class="header-logo logo" href="index.html">Th@DiK@</a> 
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
                 <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
@@ -28,43 +26,40 @@
             </div>
         </nav>
         <div class="hero">
-            <img style="display: none;" src="img/welcome.webp" alt="">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                       <div class="hero-title">ΣΥΜΒΟΥΛΟΙ ΣΤΡΑΤΗΓΙΚΗΣ ΕΠΑΓΓΕΛΜΑΤΙΑ</div>
-                        <div class="paragraph">Ο Λογιστής Φοροτέχνης είναι το υπ΄αριθμό ένα στέλεχος εμπιστοσύνης, 
-                                το πρόσωπο από το οποίο ο επιχειρηματίας περιμένει σωστή και έγκαιρη πληροφόρηση, 
-                                ορθή συμβουλή-κατεύθυνση και προφύλαξη απο φορολογικές παγίδες.</div>
-                        <div class="buttons">
-                            <a class="reservation" href="./pages/contact/index.html"><button>Κλείσε ραντεβού</button></a>
-                        </div>
+            <div class="hero-container container">
+                <div class="hero-content content">
+                    <div class="hero-title">ΣΥΜΒΟΥΛΟΙ ΣΤΡΑΤΗΓΙΚΗΣ ΕΠΑΓΓΕΛΜΑΤΙΑ</div>
+                    <div class="hero-paragraph">Ο Λογιστής Φοροτέχνης είναι το υπ΄αριθμό ένα στέλεχος εμπιστοσύνης, 
+                            το πρόσωπο από το οποίο ο επιχειρηματίας περιμένει σωστή και έγκαιρη πληροφόρηση, 
+                            ορθή συμβουλή-κατεύθυνση και προφύλαξη απο φορολογικές παγίδες.</div>
+                    <div class="buttons">
+                        <a class="reservation" href="./pages/contact/index.html"><button>Κλείσε ραντεβού</button></a>
                     </div>
                 </div>
             </div>           
         </div>
         <div class="services">
-            <div class="container">
-                <div class="services-content">
+            <div class="services-container container">
+                <div class="services-content content">
                     <div class="content-title">Παροχές</div>
-                    <div class="content">
+                    <div class="services-main">
                         <div class="para">
-                            <p>Το γραφείο μας σας παρέχει ένα ολοκληρωμένο σύνολο από Λογιστικές και Φορολογικές λύσεις, 
-                                για κάθε νομικής μορφής εταιρεία, με υπευθυνότητα και αξιοπιστία, συμβάλλοντας στην πορεία της εξέλιξης και ανέλιξης της εταιρείας σας. 
-                                Παρέχουμε συμβουλευτικές υπηρεσίες σε θέματα Οργάνωσης Επιχειρήσεων, Συστάσεις Επιχειρήσεων, Ενημέρωση βιβλίων, Ηλεκτρονική Μηχανοργάνωση, 
-                                Εργατικά, Μισθοδοσία, ΙΚΑ με ειδίκευση στις νέες τεχνολογίες.</p>
+                            Το γραφείο μας σας παρέχει ένα ολοκληρωμένο σύνολο από Λογιστικές και Φορολογικές λύσεις, 
+                            για κάθε νομικής μορφής εταιρεία, με υπευθυνότητα και αξιοπιστία, συμβάλλοντας στην πορεία της εξέλιξης και ανέλιξης της εταιρείας σας. 
+                            Παρέχουμε συμβουλευτικές υπηρεσίες σε θέματα Οργάνωσης Επιχειρήσεων, Συστάσεις Επιχειρήσεων, Ενημέρωση βιβλίων, Ηλεκτρονική Μηχανοργάνωση, 
+                            Εργατικά, Μισθοδοσία, ΙΚΑ με ειδίκευση στις νέες τεχνολογίες.
                         </div>
                         <div class="image">
-                            <img src="./img/tax.webp" alt="An illustration of an accountant" width="350px" height="350px">
+                            <img loading="lazy" src="./img/tax.webp" alt="An illustration of an accountant" width="350px" height="350px">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <a class="footer-logo" href="index.html">Th@DiK@</a>
+            <div class="footer-container container">
+                <div class="footer-content content">
+                    <a class="footer-logo logo" href="index.html">Th@DiK@</a>
                     <ul class="footer-links">
                         <li class="footer-link-title">Εφαρμογές</li>
                         <li class="footer-link"><a href="http://ergatika.gr/program/apoz-apol/" target="_blank" rel="noopener noreferrer">Αποζημίωση Απόλυσης</a></li>
