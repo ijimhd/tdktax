@@ -252,22 +252,6 @@ button{
     gap: 0.7em;
 }
 
-.input-field{
-    font-size: 0.9em;
-    padding: 0.5em;
-    margin-top: 0.9em;
-    border-radius: 7px;
-    width: 100%;
-}
-
-.message-content{
-    padding-block: 1.1em;
-}
-
-.message-box{
-    height: 10em;
-}
-
 iframe{
     width: 100%;
     height: 500px;
