@@ -134,6 +134,7 @@ button{
 .footer-content{
     display:flex;
     justify-content: space-between;
+    gap: 1em;
     width: 100%;
 }
 
@@ -233,11 +234,13 @@ button{
 
 .contact-container{
     display: block;
+    padding-inline: 1em;
 }
 
 .contact-content{
     display:flex;
     justify-content: space-between;
+    gap: 3em;
     margin-bottom: 3em;
 }
 
@@ -279,11 +282,54 @@ iframe{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1050px){
+    
     body{
         font-size: 18px;
     }
 
+    .contact-container{
+        max-width: 600px;
+    }
+    
+    .contact-content{
+        flex-wrap: wrap-reverse;
+        margin-inline: 1em;
+    }
+
+    .conact-form-content{
+        margin-bottom: 3em;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .full-name{
+        flex-direction: column;
+    }
+
+    .submit-button-content{
+        align-self: center;
+    }
+
+    .contact-information{
+        text-align: center;
+        width:100%;
+        gap: 2em;
+    }
+
+    iframe{
+        height: 400px;
+    }
+
+    .map-content{
+        margin-inline: 1em;
+    }
+}
+
+@media screen and (max-width: 900px){
+    
     .links-container{
         flex-direction: column;
         align-items: flex-start;
@@ -367,47 +413,12 @@ iframe{
     }
 
     .footer-content{
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 2em;
     }
     
     .app-box{
         width: 90%;
-    }
-
-    .contact-container{
-        max-width: 600px;
-    }
-    
-    .contact-content{
-        flex-wrap: wrap-reverse;
-        margin-inline: 1em;
-    }
-
-    .contact-form-content{
-        margin-bottom: 3em;
-    }
-
-    .full-name{
-        flex-direction: column;
-    }
-
-    .submit-button-content{
-        align-self: center;
-    }
-
-    .contact-information{
-        text-align: center;
-        width:100%;
-        gap: 2em;
-    }
-
-    iframe{
-        height: 400px;
-    }
-
-    .map-content{
-        margin-inline: 1em;
     }
 }
 
