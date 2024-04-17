@@ -49,6 +49,10 @@ a{
     color: #f2e9de;
 }
 
+nav a{
+    font-weight: 500;
+}
+
 .logo{
     font-size: 1.7em;
     font-weight: 500;
