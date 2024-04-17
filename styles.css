@@ -198,11 +198,13 @@ button{
 
 .form-title{
     font-size: 1.6em;
+    font-weight: 500;
     text-align: center;
 }
 
 .info-title{
     font-size: 1.1em;
+    font-weight: 500;
     padding-bottom: 0.5em;
 }
 
@@ -250,6 +252,12 @@ button{
     display: flex;
     flex-direction: column;
     gap: 0.7em;
+}
+
+input:focus,
+textarea:focus{
+    border: 3px solid #ff8c00;
+    outline: 0;
 }
 
 iframe{
