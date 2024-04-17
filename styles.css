@@ -184,40 +184,65 @@ button{
     color:#ff8c00;
 }
 
+.contact-information{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-box{
+    background-color: #202121;
+    padding: 2em;
+    border-radius: 7px;
+}
+
+.form-title{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.info-title{
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+}
+
+.info{
+    font-weight: 300;
+}
+
+.number1{
+    margin-bottom: 0.3em;
+}
+
+.input-field{
+    border: 0;
+    font-size: 0.9em;
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 7px;
+}
+
 .contact-container{
     display: block;
 }
 
 .contact-content{
-    display: flex;
-    justify-content: space-between;
-    padding-block: 3em;
-    height: 100%;
-    gap: 3em;
-}
-
-.info-box{
-    display: flex;
-    flex-direction: column;
-    background-color: #202121;
-    padding: 1.5em;
-    border-radius: 7px;
-}
-
-.contact-form-content,
-.contact-information{
     display:flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3em;
 }
 
-.contact-information{
-    align-content: space-between;
-    gap: 1.5em;
+.contact-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #202121;
+    border-radius: 7px;
+    padding: 2em;
 }
 
 .full-name{
     display: flex;
-    flex: 1;
     gap: 2em;
 }
 
@@ -251,14 +276,12 @@ iframe{
 }
 
 @media screen and (max-width: 1400px){
-
     .hero{
         background-size:cover;
     }
 }
 
 @media screen and (max-width: 900px){
-    
     body{
         font-size: 18px;
     }
@@ -361,22 +384,24 @@ iframe{
     .contact-content{
         flex-wrap: wrap-reverse;
         margin-inline: 1em;
-        padding-top: 0;
-        gap: 2em;
     }
 
-    .contact-form{
-        width: 100%;
+    .contact-form-content{
+        margin-bottom: 3em;
     }
 
     .full-name{
         flex-direction: column;
-        gap: 1em;
+    }
+
+    .submit-button-content{
+        align-self: center;
     }
 
     .contact-information{
         text-align: center;
-        width: 100%;
+        width:100%;
+        gap: 2em;
     }
 
     iframe{
