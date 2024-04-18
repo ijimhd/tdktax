@@ -409,7 +409,7 @@ iframe{
     .hero{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-small.webp");
         background-repeat: no-repeat;
-        background-size: 100vw 100%;
+        background-size: cover;
     }
 
     .hero-container{
