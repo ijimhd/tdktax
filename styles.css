@@ -14,15 +14,10 @@ body{
     font-weight: 400;
 }
 
-nav,
+.header-container,
 .links-container{
     display: flex;
     align-items: center;
-}
-
-nav{
-    padding-block: 1em;
-    padding-inline: 1.5em;
 }
 
 .links-container{
@@ -62,7 +57,8 @@ nav a{
     margin-right: auto;
 }
 
-a:hover{
+a:hover,
+a.active{
     color: #ff8c00;
 }
 
@@ -77,11 +73,15 @@ button{
     cursor: pointer;
 }
 
+.header-container.container{
+    padding-block: 1em;
+}
+
 .container{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding-inline: 0.5em;
+    padding-inline: 2em;
     padding-block: 3em;
     justify-content: center;
 }
@@ -347,7 +347,7 @@ iframe{
 
     .links-container{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         position: fixed;
         top: 0;
         right: -100%;
@@ -362,12 +362,11 @@ iframe{
     }
 
     nav a.nav-link{
-        box-sizing: border-box;
         height: auto;
-        width: 100%;
-        padding: 20px 30px;
+        margin-block: 0.7em;
+        padding-bottom: 0.3em;
         text-align: center;
-        font-size:23px;
+        font-size: 1.4em;
     }
 
     a:hover{
