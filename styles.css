@@ -87,7 +87,7 @@ button{
 }
 
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-normal.webp");
     background-repeat: no-repeat;
     background-size: 100vw 100%;
 }
@@ -287,7 +287,7 @@ iframe{
     }
 
     .hero{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-smaller.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-medium.webp");
         background-repeat: no-repeat;
         background-size: 100vw 100%;
     }
@@ -407,7 +407,9 @@ iframe{
     }
 
     .hero{
-        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-small.webp");
+        background-repeat: no-repeat;
+        background-size: 100vw 100%;
     }
 
     .hero-container{
