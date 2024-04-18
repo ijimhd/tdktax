@@ -168,6 +168,10 @@ button{
 }
 
 .app-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
     max-width: 350px;
     background-color: #202121;
     padding-block: 2em;
@@ -185,7 +189,6 @@ button{
 .app-desc{
     font-size: 0.9em;
     font-weight: 300;
-    padding-block: 1.5em;
 }
 
 .app-link{
@@ -230,6 +233,7 @@ button{
     width: 100%;
     padding: 0.8em;
     border-radius: 7px;
+    background-color: #f2e9de;
 }
 
 .contact-container{
