@@ -281,8 +281,19 @@ iframe{
 }
 
 @media screen and (max-width: 1400px){
+    
+    body{
+        font-size: 20px;
+    }
+
     .hero{
-        background-size:cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-smaller.webp");
+        background-repeat: no-repeat;
+        background-size: 100vw 100%;
+    }
+
+    .hero-container{
+        height: 600px;
     }
 }
 
@@ -393,6 +404,10 @@ iframe{
         display:flex;
         width:100%;
         align-items: center;
+    }
+
+    .hero{
+        background-size: cover;
     }
 
     .hero-container{
