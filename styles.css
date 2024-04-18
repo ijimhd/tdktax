@@ -76,7 +76,7 @@ button{
     cursor: pointer;
 }
 
-.container{
+.header-container.container{
     padding-block: 1em;
 }
 
