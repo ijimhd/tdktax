@@ -130,6 +130,10 @@ button{
     margin-bottom: 1em;
 }
 
+.blog-container{
+    flex-direction: column;
+}
+
 .footer{
     background-color: #130f0b;
 }
