@@ -57,8 +57,7 @@ nav a{
     margin-right: auto;
 }
 
-a:hover,
-a.active{
+a:hover{
     color: #ff8c00;
 }
 
