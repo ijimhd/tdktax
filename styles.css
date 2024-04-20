@@ -61,7 +61,7 @@ a:hover{
     color: #ff8c00;
 }
 
-a.nav-link[aria-current="page"]{
+a.nav-item[aria-current="page"]{
     color: #ff8c00;
 }
 
@@ -128,10 +128,6 @@ button{
     font-size: 2em;
     text-align: center;
     margin-bottom: 1em;
-}
-
-.blog-container{
-    flex-direction: column;
 }
 
 .footer{
