@@ -138,6 +138,7 @@ button{
 .footer-content{
     display:flex;
     justify-content: space-between;
+    text-align: center;
     gap: 1em;
     width: 100%;
 }
@@ -150,6 +151,14 @@ button{
 .footer-link{
     padding-bottom: 1em;
     font-weight: 300;
+}
+
+.footer-links-color > li a{
+    color:#ff8c00;
+}
+
+.footer-links-color > li a:hover{
+    color: #f2e9de;
 }
 
 .title{
