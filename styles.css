@@ -463,6 +463,10 @@ iframe{
         align-items: center;
     }
 
+    .dropdown.is-open .dropdown-content {
+        display: block;
+    }
+
     .top{
         display:flex;
         width:100%;
@@ -509,4 +513,3 @@ iframe{
         width: 90%;
     }
 }
-
