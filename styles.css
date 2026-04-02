@@ -343,6 +343,7 @@ iframe{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     color:#ff8c00;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1400px){
