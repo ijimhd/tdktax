@@ -409,7 +409,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 980px){
 
     .links-container{
         flex-direction: column;
@@ -504,6 +504,10 @@ iframe{
     .services-main{
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .apps-content{
+        flex-direction: column;
     }
 
     .footer-content{
