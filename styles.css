@@ -331,6 +331,7 @@ iframe{
   display: block;
   border-radius: 7px;
   border-bottom:1px solid #202121;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Change color of dropdown links on hover */
@@ -342,12 +343,20 @@ iframe{
 @media (hover: hover) {
     .dropdown:hover .dropdown-content {
         display: block;
+        
     }
+    
     .dropdown:hover .dropbtn {
     color:#ff8c00;
     cursor: pointer;
     padding-bottom: 10px;
     }
+
+    .dropdown:hover .arrow{
+    display: inline-block;
+    transform: rotate(180deg);
+    }
+
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
@@ -380,6 +389,11 @@ iframe{
 
     .dropdown.is-open .dropdown-content {
         display: block;
+    }
+
+    .dropdown.is-open .arrow{
+        display: inline-block;
+        transform: rotate(180deg);
     }
 
     .contact-container{
