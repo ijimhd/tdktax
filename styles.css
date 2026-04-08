@@ -456,7 +456,8 @@ iframe{
         transform: translateX(-50%);
         width: 100vw;
         height:12vh;
-        background-color: #1a1a1a;
+        background-color: #121212;
+        border-top: 2px solid #1a1a1a;
         padding: 30px 10px;
         z-index: 1000;
         align-items: center;
