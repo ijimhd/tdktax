@@ -11,6 +11,7 @@
     --primary-accent-color: #ff8c00;
     --primary-background-color: #0a0806;
     --primary-font-color: #f2e9de;
+    --primary-border-radius: 7px;
 }
 
 body{
@@ -20,23 +21,22 @@ body{
     font-weight: 400;
 }
 
+/*  -------- Mobile navbar  -------- */
+
 .mobile.logo{
     display:none;
 }
 
-a ,
-.dropbtn{
+a{
     text-decoration: none;
     color: var(--primary-font-color);
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-a:hover ,
-.dropbtn:hover{
+a:hover{
     color: var(--primary-accent-color);
     transform: scale(1.1) translateY(-3px);
-    transform: scale(1.1);
 }
 
 .navbar{
@@ -54,36 +54,22 @@ a:hover ,
 
 ul.nav-list{
     display: flex;
-    list-style: none;
-    gap: 1em;
-    align-items: center;
-}
-
-li{
-    cursor: pointer;
-    transition: padding 0.3s ease;
 }
 
 li a{
     display: block;
-    text-decoration: none;
-    text-align: center;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.logo{
-    font-size: 1.5em;
-    font-weight: 500;
 }
 
 .reserve-button{
     font-size: 1.1em;
     font-weight: 500;
-    color: #0a0806;
+    color: var(--primary-background-color);
     background-color: var(--primary-accent-color);
     padding: 0.7em 1em;
-    border-radius: 10px;
+    border-radius: var(--primary-border-radius);
     transition: transform 0.3s ease;
+    border: none;
+    cursor:pointer;
 }
 
 .reserve-button:hover{
@@ -96,45 +82,26 @@ li a{
     pointer-events: none;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropbtn {
-  cursor: pointer;
-  font-size: 20px;  
-  border: none;
-  outline: none;
-  color: var(--primary-font-color);
-  background-color: inherit;
-  margin: 0;
-  padding-inline: 8px;
-}
-
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #1a1a1a;
-  min-width: 160px;
-  max-width: 200px;
-  margin-top: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 160px;
+    max-width: 200px;
+    margin-top: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
-  color: var(--primary-font-color);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
+    float: none;
+    padding: 0.6em 0.8em;
+    text-align: center;
 }
 
 .dropdown-content a:hover {
-  background-color: #1a1a1a;
-    color:#ff8c00;
+    background-color: #1a1a1a;
+    color: var(--primary-accent-color);
 }
 
 .show {
@@ -142,7 +109,7 @@ li a{
 }
 
 .dropbtn:hover{
-    color:#ff8c00;
+    color: var(--primary-accent-color);
 }
 
 ul{
@@ -151,31 +118,12 @@ ul{
     gap: 1em;
 }
 
-a{
-    text-decoration: none;
-    color: #f2e9de;
-}
-
 .logo{
     font-size: 1.7em;
     font-weight: 500;
 }
 
-a:hover{
-    color: #ff8c00;
-}
 
-a.reservation,
-button{
-    background-color: #ff8c00;
-    color:#0a0806;
-    border: none;
-    font-size: 1em;
-    font-weight: 500;
-    padding: 0.9em;
-    border-radius: 7px;
-    cursor: pointer;
-}
 
 .container{
     display: flex;
@@ -185,6 +133,8 @@ button{
     padding-block: 3em;
     justify-content: center;
 }
+
+/*  -------- Home page  -------- */
 
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-normal.webp");
@@ -205,8 +155,8 @@ button{
     font-size: 2.6em;
     font-weight: 500;
     text-shadow: 2px 2px 8px black;
-    background-color: #ff8c00;
-    border-radius: 7px;
+    background-color:  var(--primary-accent-color);
+    border-radius: var(--primary-border-radius);
     padding-block: 0.5em;
 }
 
@@ -226,6 +176,8 @@ button{
     text-align: center;
     margin-bottom: 1em;
 }
+
+/* -------- Footer -------- */
 
 .footer{
     background-color: #130f0b;
@@ -250,19 +202,21 @@ button{
 }
 
 .footer-links-color > li a{
-    color:#ff8c00;
+    color: var(--primary-accent-color);
 }
 
 .footer-links-color > li a:hover{
-    color: #f2e9de;
+    color: var(--primary-font-color);
 }
+
+/* -------- Apps page -------- */
 
 .title{
     font-size: 2.5em;
     font-weight: 500;
     text-shadow: 2px 2px 8px black;
     text-align: center;
-    background-color: #ff8c00;
+    background-color: var(--primary-accent-color);
     padding-block: 1em;
 }
 
@@ -287,7 +241,7 @@ button{
     padding-inline: 1em;
     margin: 0.9em;
     text-align: center;
-    border-radius: 7px;
+    border-radius: var(--primary-border-radius);
 }
 
 .app-box.main{
@@ -310,8 +264,10 @@ button{
 }
 
 .app-link{
-    color:#ff8c00;
+    color: var(--primary-accent-color);
 }
+
+/* -------- Contact page  -------- */
 
 .contact-information{
     display:flex;
@@ -322,7 +278,7 @@ button{
 .info-box{
     background-color: #202121;
     padding: 2em;
-    border-radius: 7px;
+    border-radius: var(--primary-border-radius);
 }
 
 .form-title{
@@ -350,8 +306,8 @@ button{
     font-size: 0.9em;
     width: 100%;
     padding: 0.8em;
-    border-radius: 7px;
-    background-color: #f2e9de;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-font-color);
 }
 
 .contact-container{
@@ -371,7 +327,7 @@ button{
     flex-direction: column;
     gap: 2em;
     background-color: #202121;
-    border-radius: 7px;
+    border-radius: var(--primary-border-radius);
     padding: 2em;
 }
 
@@ -388,23 +344,19 @@ button{
 
 input:focus,
 textarea:focus{
-    outline: 3px solid #ff8c00;
+    outline: 3px solid  var(--primary-accent-color);
 }
 
 iframe{
     width: 100%;
     height: 500px;
     border: none;
-    border-radius: 7px;
+    border-radius: var(--primary-border-radius);
 }
 
-
+/*  -------- Media queries  -------- */
 
 @media screen and (max-width: 1400px){
-    
-    body{
-        font-size: 20px;
-    }
 
     .hero{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/welcome-medium.webp");
@@ -455,10 +407,10 @@ iframe{
         left: 50%;
         transform: translateX(-50%);
         width: 100vw;
-        height:12vh;
+        height: 12vh;
         background-color: #121212;
         border-top: 2px solid #1a1a1a;
-        padding: 30px 10px;
+        padding: 1.6em 0.6em;
         z-index: 1000;
         align-items: center;
     }
@@ -484,7 +436,7 @@ iframe{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.6em;
     }
 
     .nav-item.active .label{
@@ -492,10 +444,10 @@ iframe{
     }
 
     .dropdown-content {
-        top: auto;          /* Reset the top position */
-        bottom: 100%;       /* Anchor it to the top of the button */
-        margin-top: 0;      /* Remove the desktop downward margin */
-        margin-bottom: 10px;
+        top: auto;          
+        bottom: 100%;      
+        margin-top: 0;
+        margin-bottom: 0.5em;
     }
 
     .contact-container{
@@ -537,7 +489,7 @@ iframe{
 @media screen and (max-width: 980px){
 
     a:hover{
-        color:#ff8c00;
+        color: var(--primary-accent-color);
     }
 
     .top{
@@ -592,115 +544,3 @@ iframe{
         padding:0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
