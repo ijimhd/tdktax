@@ -7,30 +7,142 @@
     font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root{
+    --primary-accent-color: #ff8c00;
+    --primary-background-color: #0a0806;
+    --primary-font-color: #f2e9de;
+}
+
 body{
-    background-color: #0a0806;
-    color: #f2e9de;
-    font-size: 23px;
+    background-color: var(--primary-background-color);
+    color: var(--primary-font-color);
+    font-size: 20px;
     font-weight: 400;
 }
 
-.header-container,
-.links-container{
+.mobile.logo{
+    display:none;
+}
+
+a ,
+.dropbtn{
+    text-decoration: none;
+    color: var(--primary-font-color);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+a:hover ,
+.dropbtn:hover{
+    color: var(--primary-accent-color);
+    transform: scale(1.1) translateY(-3px);
+    transform: scale(1.1);
+}
+
+.navbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 1200px;
+}
+
+.nav-item.active .label{
+    color: var(--primary-accent-color);
+}
+
+ul.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 1em;
     align-items: center;
 }
 
-.links-container{
-    gap: 1em;
+li{
+    cursor: pointer;
+    transition: padding 0.3s ease;
 }
 
-#sidebar-active,
-.open-sidebar-button, .close-sidebar-button{
+li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.reserve-button{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #0a0806;
+    background-color: var(--primary-accent-color);
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.reserve-button:hover{
+    color: var(--primary-font-color);
+    transform: scale(1.05);
+}
+
+.mobile-navbar-image{
     display: none;
+    pointer-events: none;
 }
 
-nav svg{
-    fill: white;
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: var(--primary-font-color);
+  background-color: inherit;
+  margin: 0;
+  padding-inline: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1a1a;
+  min-width: 160px;
+  max-width: 200px;
+  margin-top: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--primary-font-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #1a1a1a;
+    color:#ff8c00;
+}
+
+.show {
+  display: block;
+}
+
+.dropbtn:hover{
+    color:#ff8c00;
 }
 
 ul{
@@ -44,24 +156,12 @@ a{
     color: #f2e9de;
 }
 
-nav a, .dropbtn{
-    font-weight: 500;
-}
-
 .logo{
     font-size: 1.7em;
     font-weight: 500;
 }
 
-.header-logo{
-    margin-right: auto;
-}
-
 a:hover{
-    color: #ff8c00;
-}
-
-a.nav-item[aria-current="page"]{
     color: #ff8c00;
 }
 
@@ -75,10 +175,6 @@ button{
     padding: 0.9em;
     border-radius: 7px;
     cursor: pointer;
-}
-
-.header-container.container{
-    padding-block: 1em;
 }
 
 .container{
@@ -302,67 +398,7 @@ iframe{
     border-radius: 7px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
 
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  font-size: 0.8em;
-  background-color:#0a0806;
-  border-radius: 7px;
-  border:1px solid #202121;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color:#f2e9de;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 7px;
-  border-bottom:1px solid #202121;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    color:#ff8c00;
-}
-
-/* Show the dropdown menu on hover */
-@media (hover: hover) {
-    .dropdown:hover .dropdown-content {
-        display: block;
-        
-    }
-    
-    .dropdown:hover .dropbtn {
-    color:#ff8c00;
-    cursor: pointer;
-    padding-bottom: 10px;
-    }
-
-    .dropdown:hover .arrow{
-    display: inline-block;
-    transform: rotate(180deg);
-    }
-
-}
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    color:#ff8c00;
-    cursor: pointer;
-}
 
 @media screen and (max-width: 1400px){
     
@@ -387,13 +423,78 @@ iframe{
         font-size: 18px;
     }
 
-    .dropdown.is-open .dropdown-content {
+    .desktop.logo,
+    .reserve-button.desktop{
+        display: none;
+    }
+
+    .mobile.logo{
+        display: inline-block;
+        font-size: 1.8em;
+    }
+
+    .mobile-logo-container{
+        display: flex;
+        justify-content: center;
+        padding-block: 3vh;
+    }
+
+    .mobile-navbar-image{
         display: block;
     }
 
-    .dropdown.is-open .arrow{
-        display: inline-block;
-        transform: rotate(180deg);
+    ul.nav-list{
+        width:100%;
+        padding-inline: 10vw;
+    }
+
+    .navbar {
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height:12vh;
+        background-color: #1a1a1a;
+        padding: 30px 10px;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .nav-item .label,
+    .dropbtn {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .nav-item{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-item.active .label{
+        color: var(--primary-accent-color);
+    }
+
+    .dropdown-content {
+        top: auto;          /* Reset the top position */
+        bottom: 100%;       /* Anchor it to the top of the button */
+        margin-top: 0;      /* Remove the desktop downward margin */
+        margin-bottom: 20px;
     }
 
     .contact-container{
@@ -434,69 +535,14 @@ iframe{
 
 @media screen and (max-width: 980px){
 
-    .links-container{
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 100%;
-        height:100%;
-        overflow: hidden;
-        background-color: black;
-        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-        transition: 0.50s ease-out;
-        gap:5px;
-        padding:20px;
-    }
-
-    nav a.nav-link,
-    .dropbtn{
-        height: auto;
-        margin-block: 0.7em;
-        text-align: center;
-        font-size: 1.4em;
-    }
-
     a:hover{
         color:#ff8c00;
-    }
-
-    .open-sidebar-button, .close-sidebar-button{
-        padding: 20px;
-        display: block;
-    }
-
-    .close-sidebar-button{
-        margin-left:auto;
-    }
-
-    #sidebar-active:checked ~ .links-container{
-        right: 0;
-    }
-
-    #sidebar-active:checked ~ #overlay{
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-    }
-
-    nav{
-        align-items: center;
     }
 
     .top{
         display:flex;
         width:100%;
         align-items: center;
-    }
-
-    .dropdown-content{
-        font-size: 1em;
     }
 
     .hero{
@@ -539,3 +585,121 @@ iframe{
         width: 90%;
     }
 }
+
+@media screen and (max-width: 440px){
+    ul.navlist{
+        padding:0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

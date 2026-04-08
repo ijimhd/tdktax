@@ -10,33 +10,51 @@
         <script defer src="/js/dropdown.js"></script>
     </head>
     <body>
-        <nav>
-            <div class="header-container container">
-                <a class="header-logo logo" href="./">Th@DiK@</a> 
-                <input type="checkbox" id="sidebar-active">
-                <label for="sidebar-active" class="open-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                </label>
-                <label id="overlay" for="sidebar-active"></label>
-                <div class="links-container">
-                    <label for="sidebar-active" class="close-sidebar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                    </label>                
-                    <a class="nav-link nav-item" href="./">Αρχική</a>
-                    <a class="nav-link nav-item" href="./apps">Εφαρμογές</a>
-                    <a class="nav-link nav-item" href="./contact">Επικοινωνία</a>
-                    <div class="dropdown">
-                        <div class="dropbtn">Online Υπηρεσίες <span class="arrow">▾</span></a> </div>
-                        <div class="dropdown-content">
-                            <a href="https://forms.gle/Q86b1XGCceSC1BbW6" target="_blank" rel="noopener noreferrer">Αίτημα για πρόσληψη εργαζομένου</a>
-                            <a href="https://forms.gle/PCHnVJ614Bp6wKsj7" target="_blank" rel="noopener noreferrer">Εξ αποστάσεως εξυπηρέτηση πελατών</a>
+        <div class="mobile-logo-container">
+            <a class="mobile logo" href="./index.html">Th@DiK@</a>
+        </div>
+        <div class="navbar">
+            <a class="desktop logo" href="./index.html">Th@DiK@</a>
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <a class="nav-item-link" href="./index.html">
+                        <img class="home-active mobile-navbar-image" src="./img/svg/home-active.svg" alt="Home page active navbar icon">
+                        <span class="label">Αρχική</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./apps">
+                        <img class="home-inactive mobile-navbar-image" src="./img/svg/apps-inactive.svg" alt="Home page inactivenavbar icon">
+                        <span class="label">Εφαρμογές</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-link"> 
+                        <a href="#" class="dropbtn nav-item-link" onclick="myFunction(event)">
+                            <img class="home-inactive mobile-navbar-image" src="./img/svg/online-inactive.svg" alt="Home page inactivenavbar icon">
+                            Online Υπηρεσίες ▾
+                        </a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a class="dropdown-link" href="https://forms.gle/Q86b1XGCceSC1BbW6" target="_blank" rel="noopener noreferrer">Αίτημα για πρόσληψη εργαζομένου</a>
+                            <a class="dropdown-link" href="https://forms.gle/PCHnVJ614Bp6wKsj7" target="_blank" rel="noopener noreferrer">Εξ αποστάσεως εξυπηρέτηση πελατών</a>
                         </div>
                     </div>
-                    <a class="nav-link" href="http://logistis4u.blogspot.com/" target="_blank" rel="noopener noreferrer">Blogspot</a>
-                    <a class="nav-link reservation" href="./contact">Κλείσε ραντεβού</a>
-                </div>
-            </div>
-        </nav>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./contact">
+                        <img class="home-inactive mobile-navbar-image" src="./img/svg/call-inactive.svg" alt="Home page inactivenavbar icon">
+                        <span class="label">Επικοινωνία</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="http://logistis4u.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="home-inactive mobile-navbar-image" src="./img/svg/blog-inactive.svg" alt="Home page inactivenavbar icon">
+                        <span class="label">Blogspot</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="reserve-button desktop" href="./index.html">Κλείσε ραντεβού</a>
+        </div>
         <div class="hero">
             <div class="hero-container container">
                 <div class="hero-content content">

@@ -1,18 +1,18 @@
-document.querySelectorAll('.dropbtn').forEach(button => {
-  button.addEventListener('click', (e) => {
-    // Prevent the link from jumping if it's a '#' link
-    e.preventDefault();
-    
-    const parent = button.parentElement;
-    
-    // Toggle the 'is-open' class on the parent container
-    parent.classList.toggle('is-open');
-    
-    // Optional: Close the menu if you click anywhere else on the screen
-    document.addEventListener('click', (event) => {
-      if (!parent.contains(event.target)) {
-        parent.classList.remove('is-open');
-      }
-    }, { once: true });
-  });
-});
+/* Pass the 'e' (event) into the function */
+function myFunction(e) {
+  // Prevent the link from jumping the page to the top
+  if (e) e.preventDefault(); 
+  
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  // We check if the click was NOT on the toggle link
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
