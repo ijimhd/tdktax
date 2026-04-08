@@ -587,7 +587,7 @@ iframe{
 }
 
 @media screen and (max-width: 440px){
-    ul.navlist{
+    ul.nav-list{
         padding:0;
     }
 }
