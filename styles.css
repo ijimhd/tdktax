@@ -567,6 +567,7 @@ iframe{
         transform: translateX(-50%);
         z-index: 1000;
         align-items: center;
+        pointer-events: auto;
     }
 
     .dropdown-content.show  ~ .reserve-button.mobile{
